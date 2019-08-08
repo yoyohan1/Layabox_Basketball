@@ -29,7 +29,33 @@ class Main {
 	onConfigLoaded(): void {
 		//加载IDE指定的场景
 		GameConfig.startScene && Laya.Scene.open(GameConfig.startScene);
+
+		//this.preLoadScene3D();
 	}
+
+
+	//预加载 好像只能预加载 场景中没用到的  不然加载了 场景中也加载 会报错
+	preLoadScene3D(): void {
+		///需要加载的3D资源列表   
+		let res3DArray: Array<any> = [
+			// { url: "res/scenes3D/LayaScene_game_scene/Conventional/Assets/res/modules/Models/Goal-Basketball_1_43.lm", type: Laya.Sprite3D },
+			// { url: "res/scenes3D/LayaScene_game_scene/Conventional/Assets/res/modules/Models/GoalHoop-Basketball_1_43.lm", type: Laya.Sprite3D },
+			// { url: "res/scenes3D/LayaScene_game_scene/Conventional/Assets/res/modules/GoalHoop-holder_1__1.lm", type: Laya.Sprite3D },
+			{ url: "res/scenes3D/LayaScene_game_scene/Conventional/StarMaterial.lmat", type: Laya.BaseMaterial },
+		];
+
+
+		Laya.loader.create(res3DArray, Laya.Handler.create(this, () => {
+			console.log("加载3D完成");
+			GameConfig.startScene && Laya.Scene.open(GameConfig.startScene);
+		}),
+			Laya.Handler.create(this, (pro: number) => {
+				console.log("加载3D进度：" + pro);
+			}));
+
+	}
+
+
 }
 //激活启动类
 new Main();
