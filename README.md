@@ -1,6 +1,6 @@
 # Basketball
 LayaBox+Unity制作的微信小游戏  
-环境：Unity5.6.3+[LayaIDE2.1.0+Laya2.1.0的Unity插件](https://ldc2.layabox.com/layadownload/?type=layaairide-LayaAir%20IDE%202.1.0)(版本不一样会产生不可预知的bug)
+环境：Unity5.6.3+[LayaIDE2.1.0+Laya2.1.0的Unity插件](https://ldc2.layabox.com/layadownload/?type=layaairide-LayaAir%20IDE%202.1.0)(版本不一样会产生无法预知的bug)
 
 ![image](https://github.com/yoyohan1/Basketball/blob/master/basketball.gif)
 
