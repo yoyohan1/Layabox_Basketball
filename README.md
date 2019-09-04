@@ -5,5 +5,6 @@ LayaBox+Unity制作的微信小游戏
 ![image](https://github.com/yoyohan1/Basketball/blob/master/basketball.gif)
 
 参考视频教程：https://www.bilibili.com/video/av62360502  
+参考视频教程：https://www.bilibili.com/video/av65902155
 所使用的unitypackage：https://github.com/yoyohan1/Basketball/blob/master/release/%E8%A1%97%E5%A4%B4%E7%AF%AE%E7%90%83.unitypackage
 
